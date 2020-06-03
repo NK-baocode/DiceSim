@@ -10,9 +10,10 @@ dsides = input('How many sides per die?\n')
 
 dnumin = int(dnumin)
 dsides = int(dsides)
+dsides = dsides + 1
 
 for i in range(dnumin):
-  d = np.arange(1, (dsides+1), 1)
+  d = np.arange(1, dsides, 1)
   dvalue = (np.random.choice(d))
   print(f'Die #{n} rolled {dvalue}')
   dtotal = dvalue + dtotal
